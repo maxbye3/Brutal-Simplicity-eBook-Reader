@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="turn.min.js"></script>
+
+<style type="text/css">
+body{
+	background:#ffffff;
+}
+
+#book{
+	width:1064px;
+	height:752px;
+	border-style:inset;
+	background-image:url(pages/1.jpeg);
+}
+
+#book .turn-page{
+	background:#333;
+}
+
+#book .cover{
+	width:1064px;
+	height:752px;
+	
+}
+
+#book .loader{
+	background-image:url(loader.gif);
+	width:24px;
+	height:24px;
+	display:block;
+	position:absolute;
+	top:238px;
+	left:188px;
+}
+
+#book .data{
+	text-align:center;
+	font-size:40px;
+	color:#999;
+	line-height:500px;
+}
+
+#controls{
+	width:800px;
+	text-align:left;
+	margin:20px 0px;
+	font:20px Garamond;
+}
+
+#controls input, #controls label{
+	font:20px Garamond;
+}
+
+#book .odd{
+	background-image:-webkit-linear-gradient(left, #FFF 95%, #ddd 100%);
+	background-image:-moz-linear-gradient(left, #FFF 95%, #ddd 100%);
+	background-image:-o-linear-gradient(left, #FFF 95%, #ddd 100%);
+	background-image:-ms-linear-gradient(left, #FFF 95%, #ddd 100%);
+}
+
+#book .even{
+	background-image:-webkit-linear-gradient(right, #FFF 95%, #ddd 100%);
+	background-image:-moz-linear-gradient(right, #FFF 95%, #ddd 100%);
+	background-image:-o-linear-gradient(right, #FFF 95%, #ddd 100%);
+	background-image:-ms-linear-gradient(right, #FFF 95%, #ddd 100%);
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+ <table>
+        
+        <tr>
+        <th>
+        <div id="MCSaatchi_header"><img border="0" src="mc1.png" /></div>
+        </th>
+         <th>
+         <img border="0" src="mc1_border.png" />
+        </th>
+        </tr>
+        <tr>
+        <th>
+        <div id="SportsEntertainment_header"><img border="0" src="mc2.png" /></div>	
+        </th>
+        <th>
+        	<img border="0" src="mc2_border.png" />
+        </th>
+        </tr>
+        
+</table>
+
+ <table>
+        
+        <tr>
+        <th>
+<div id="book">
+	<div style="background-image:url(pages/2.jpeg);"></div>
+    <div style="background-image:url(pages/3.jpeg);"></div>
+	<div style="background-image:url(pages/4.jpeg);"></div>
+	<div style="background-image:url(pages/5.jpeg);"></div>
+    <div style="background-image:url(pages/6.jpeg);"></div>
+	<div style="background-image:url(pages/7.jpeg);"></div>
+    <div style="background-image:url(pages/8.jpeg);"></div>
+    <div  style="background-image:url(pages/9.jpeg);"></div>
+    <div style="background-image:url(pages/10.jpeg);"></div>
+    <div style="background-image:url(pages/11.jpeg);"></div>
+	<div style="background-image:url(pages/12.jpeg);"></div>
+	<div style="background-image:url(pages/13.jpeg);"></div>
+	<div style="background-image:url(pages/14.jpeg);"></div>
+	<div style="background-image:url(pages/15.jpeg);"></div>
+    <div style="background-image:url(pages/16.jpeg);"></div>
+	<div style="background-image:url(pages/17.jpeg);"></div>
+    <div style="background-image:url(pages/18.jpeg);"></div>
+    <div style="background-image:url(pages/19.jpeg);"></div>
+    <div style="background-image:url(pages/20.jpeg);"></div>
+    <div style="background-image:url(pages/21.jpeg);"></div>
+	<div style="background-image:url(pages/22.jpeg);"></div>
+	<div style="background-image:url(pages/23.jpeg);"></div>
+	<div style="background-image:url(pages/24.jpeg);"></div>
+	<div style="background-image:url(pages/25.jpeg);"></div>
+    <div style="background-image:url(pages/26.jpeg);"></div>
+	<div style="background-image:url(pages/27.jpeg);"></div>
+    <div style="background-image:url(pages/28.jpeg);"></div>
+    <div style="background-image:url(pages/29.jpeg);"></div>
+    <div style="background-image:url(pages/30.jpeg);"></div>
+	<div style="background-image:url(pages/31.jpeg);"></div>
+	<div style="background-image:url(pages/32.jpeg);"></div>
+	<div style="background-image:url(pages/33.jpeg);"></div>
+	<div style="background-image:url(pages/34.jpeg);"></div>
+	<div style="background-image:url(pages/35.jpeg);"></div>
+    <div style="background-image:url(pages/36.jpeg);"></div>
+	<div style="background-image:url(pages/37.jpeg);"></div>
+    <div style="background-image:url(pages/38.jpeg);"></div>
+    <div style="background-image:url(pages/39.jpeg);"></div>
+    <div style="background-image:url(pages/40.jpeg);"></div>
+    <div style="background-image:url(pages/41.jpeg);"></div>
+	<div style="background-image:url(pages/42.jpeg);"></div>
+	<div style="background-image:url(pages/43.jpeg);"></div>
+	<div style="background-image:url(pages/44.jpeg);"></div>
+	<div style="background-image:url(pages/45.jpeg);"></div>
+    <div style="background-image:url(pages/46.jpeg);"></div>
+	<div style="background-image:url(pages/47.jpeg);"></div>
+    <div style="background-image:url(pages/48.jpeg);"></div>
+    <div style="background-image:url(pages/49.jpeg);"></div>
+    <div style="background-image:url(pages/50.jpeg);"></div>
+    <div style="background-image:url(pages/51.jpeg);"></div>
+	<div style="background-image:url(pages/52.jpeg);"></div>
+	<div style="background-image:url(pages/53.jpeg);"></div>
+	<div style="background-image:url(pages/54.jpeg);"></div>
+	<div style="background-image:url(pages/55.jpeg);"></div>
+    <div style="background-image:url(pages/56.jpeg);"></div>
+	<div style="background-image:url(pages/57.jpeg);"></div>
+    <div style="background-image:url(pages/58.jpeg);"></div>
+    <div style="background-image:url(pages/59.jpeg);"></div>
+    <div style="background-image:url(pages/60.jpeg);"></div>
+    <div style="background-image:url(pages/61.jpeg);"></div>
+	<div style="background-image:url(pages/62.jpeg);"></div>
+	<div style="background-image:url(pages/63.jpeg);"></div>
+	<div style="background-image:url(pages/64.jpeg);"></div>
+	<div style="background-image:url(pages/65.jpeg);"></div>
+    <div style="background-image:url(pages/66.jpeg);"></div>
+	<div style="background-image:url(pages/67.jpeg);"></div>
+    <div style="background-image:url(pages/68.jpeg);"></div>
+    <div style="background-image:url(pages/69.jpeg);"></div>
+    <div style="background-image:url(pages/70.jpeg);"></div>
+    <div style="background-image:url(pages/71.jpeg);"></div>
+	<div style="background-image:url(pages/72.jpeg);"></div>
+	<div style="background-image:url(pages/73.jpeg);"></div>
+	<div style="background-image:url(pages/74.jpeg);"></div>
+	<div style="background-image:url(pages/75.jpeg);"></div>
+    <div style="background-image:url(pages/76.jpeg);"></div>
+	<div style="background-image:url(pages/77.jpeg);"></div>
+    <div style="background-image:url(pages/78.jpeg);"></div>
+    <div style="background-image:url(pages/79.jpeg);"></div>
+    <div style="background-image:url(pages/80.jpeg);"></div>
+    <div style="background-image:url(pages/81.jpeg);"></div>
+	<div style="background-image:url(pages/82.jpeg);"></div>
+	<div style="background-image:url(pages/83.jpeg);"></div>
+	<div style="background-image:url(pages/84.jpeg);"></div>
+	<div style="background-image:url(pages/85.jpeg);"></div>
+    <div style="background-image:url(pages/86.jpeg);"></div>
+	<div style="background-image:url(pages/87.jpeg);"></div>
+    <div style="background-image:url(pages/88.jpeg);"></div>
+    <div style="background-image:url(pages/89.jpeg);"></div>
+    <div style="background-image:url(pages/90.jpeg);"></div>
+	<div style="background-image:url(pages/91.jpeg);"></div>
+	<div style="background-image:url(pages/92.jpeg);"></div>
+	<div style="background-image:url(pages/93.jpeg);"></div>
+	<div style="background-image:url(pages/94.jpeg);"></div>
+	<div style="background-image:url(pages/95.jpeg);"></div>
+    <div style="background-image:url(pages/96.jpeg);"></div>
+	<div style="background-image:url(pages/97.jpeg);"></div>
+    <div style="background-image:url(pages/98.jpeg);"></div>
+    <div style="background-image:url(pages/99.jpeg);"></div>
+    <div style="background-image:url(pages/100.jpeg);"></div>
+    <div style="background-image:url(pages/101.jpeg);"></div>
+	<div style="background-image:url(pages/102.jpeg);"></div>
+	<div style="background-image:url(pages/103.jpeg);"></div>
+	<div style="background-image:url(pages/104.jpeg);"></div>
+	<div style="background-image:url(pages/105.jpeg);"></div>
+    <div style="background-image:url(pages/106.jpeg);"></div>
+	<div style="background-image:url(pages/107.jpeg);"></div>
+    <div style="background-image:url(pages/108.jpeg);"></div>
+    <div style="background-image:url(pages/109.jpeg);"></div>
+    <div style="background-image:url(pages/100.jpeg);"></div>
+    <div style="background-image:url(pages/111.jpeg);"></div>
+	<div style="background-image:url(pages/112.jpeg);"></div>
+	<div style="background-image:url(pages/113.jpeg);"></div>    
+    
+</div>
+
+    </th>
+        </tr>
+        
+</table>
+
+<div id="controls">
+	<label for="page-number">Page:</label> <input type="text" size="3" id="page-number"> of <span id="number-pages"></span>
+</div>
+
+
+<script type="text/javascript">
+
+	// Sample using dynamic pages with turn.js
+
+	var numberOfPages = 113; 
+
+
+	// Adds the pages that the book will need
+	function addPage(page, book) {
+		// 	First check if the page is already in the book
+		if (!book.turn('hasPage', page)) {
+			// Create an element for this page
+			var element = $('<div />', {'class': 'page '+((page%2==0) ? 'odd' : 'even'), 'id': 'page-'+page}).html('<i class="loader"></i>');
+			// If not then add the page
+			book.turn('addPage', element, page);
+			// Let's assum that the data is comming from the server and the request takes 1s.
+			setTimeout(function(){
+					element.html('<div class="data">Data for page '+page+'</div>');
+			}, 113);
+		}
+	}
+
+	$(window).ready(function(){
+		$('#book').turn({acceleration: true,
+							pages: numberOfPages,
+							elevation: 50,
+							gradients: !$.isTouch,
+							when: {
+								turning: function(e, page, view) {
+
+									// Gets the range of pages that the book needs right now
+									var range = $(this).turn('range', page);
+
+									// Check if each page is within the book
+									for (page = range[0]; page<=range[1]; page++) 
+										addPage(page, $(this));
+
+								},
+
+								turned: function(e, page) {
+									$('#page-number').val(page + 1);
+								}
+							}
+						});
+
+		$('#number-pages').html(numberOfPages);
+
+		$('#page-number').keydown(function(e){
+
+			if (e.keyCode==13)
+				$('#book').turn('page', $('#page-number').val());
+				
+		});
+	});
+
+	$(window).bind('keydown', function(e){
+
+		if (e.target && e.target.tagName.toLowerCase()!='input')
+			if (e.keyCode==37)
+				$('#book').turn('previous');
+			else if (e.keyCode==39)
+				$('#book').turn('next');
+
+	});
+
+
+  /*
+   * 
+   * Animation
+   *
+   */ 
+		
+ $('#MCSaatchi_header').hide().delay(1000).fadeIn(3000);
+ $('#SportsEntertainment_header').hide().delay(2500).fadeIn(3000);
+
+</script>
+
+
+</body>
+</html>
